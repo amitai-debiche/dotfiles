@@ -23,17 +23,16 @@ return {
         require("mason").setup({})
         require("mason-lspconfig").setup({
             ensure_installed = {
-                "gopls",
                 "lua_ls",
-                "tsserver",
+                "pyright",
             },
             handlers = {
                 function(server_name) -- default handler
-
                     require("lspconfig")[server_name].setup {
                         capabilities = capabilities
                     }
                 end,
+
             }
         })
 
@@ -52,7 +51,6 @@ return {
                 { name = 'buffer' },
             })
         })
-        
         vim.diagnostic.config({
             float = {
                 style = "minimal",
