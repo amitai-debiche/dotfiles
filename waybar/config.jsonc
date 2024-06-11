@@ -1,0 +1,39 @@
+// -*- mode: jsonc -*-
+// ==============================
+// WAYBAR CONFIGURATION FILE
+// Author: Amitai Debiche 
+// Date: 2024-06-05
+// Version 1.0
+// ============================
+
+{
+    // General Settings
+    // Position Top
+    "position": "top",
+    "layer": "top",
+    "height": 45,
+    "margin-top": 7,
+    "margin-bottom": -7,
+    "margin-left": 1,
+    "margin-right": 1,
+    "spacing": 0,
+
+    "include": ["~/dotfiles/waybar/modules.json"],
+
+    "modules-left": [
+        "clock",
+        "custom/date",
+        "memory"
+    ],
+
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-right": [
+        "pulseaudio",
+        "battery"
+    ],
+
+
+}

@@ -1,0 +1,38 @@
+
+* { 
+    font-family: "Mononoki Nerd Font";
+    font-size: 11pt;
+}
+
+window#waybar {
+    background-color: rgba(0,0,0,.8);
+    border-bottom: 0px solid #ffffff;
+    background: transparent;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+#workspaces { 
+    border-radius: 15px;
+    margin: 5px 5px 5px 5px;
+    padding: 4px 1px;
+    border-radius: 12px;
+    font-weight: normal;
+    font-style: normal;
+    opacity: .8;
+}
+
+#workspaces button {
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 0;
+    color: red;
+}
+
+
+#battery {
+    color: blue;
+    padding-right: 12px;
+    margin-right: 5px;
+    border-radius: 0px 15px 15px 0px;
+}
